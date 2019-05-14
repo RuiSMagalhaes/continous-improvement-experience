@@ -1,6 +1,6 @@
 version: "3"
 services:
-  react-app:
+  web:
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -9,7 +9,7 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
-  tests:
+  test:
     build:
       context: .
       dockerfile: Dockerfile.dev
