@@ -7,3 +7,4 @@ before_install:
 
 script:
   - docker run ruismagalhaes/continous-improvement-experience npm run test -- --coverage
+  - docker stop ruismagalhaes/continous-improvement-experience
